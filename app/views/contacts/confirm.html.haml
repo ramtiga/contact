@@ -1,0 +1,19 @@
+%div#contents
+  %div#main
+    %h3 Contacts confirm
+    %p
+      = t('label.name')
+      = session[:contact][:name]
+    %p
+      = t('label.email')
+      = session[:contact][:email]
+    %p
+      = t('label.subject')
+      = session[:contact][:subject]
+    %p
+      = t('label.body')
+      = session[:contact][:body]
+    %p
+      = button_to 'send', :action => "comp"
+    %br
+    = link_to 'Back', '/contacts' 

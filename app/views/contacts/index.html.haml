@@ -1,0 +1,31 @@
+%div#contents
+  %div#main
+    %h3 Contacts test
+    - form_for(:contact, :url => {:action => "create"}) do |f|
+      - if @contact.errors.any?
+        - @contact.errors.full_messages.each do |msg|
+          %div#errmsg
+            = msg
+      - else
+        =# 'えらーなし'
+        　
+      %p
+        = f.label :name
+        %br/
+        = f.text_field :name, {:size => "30"}
+      %p
+        = f.label :email
+        %br
+        = f.text_field :email
+      %p
+        = f.label :subject
+        %br
+        = f.text_field :subject
+      %p
+        = f.label :body
+        %br
+        = f.text_area :body, {:rows => "10", :cols => "30"}
+      %p
+        = f.submit t('submit')
+
+

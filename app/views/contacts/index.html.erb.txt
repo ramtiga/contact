@@ -1,0 +1,14 @@
+Contacts#index
+<%= form_for(@contact, :url => {:action => "create"}) do |f| %>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %><br />
+  <%= f.submit "submit" %>
+<% end %>
+<br />
+<%= form_for(:contact, :url => {:action => "create"}) do |ff| %>
+  <%= ff.label :name %><%= ff.text_field :name %>
+<br />
+  <%= ff.submit "create" %>
+<%- end %>
+
+<%= t('label.ramusan') %>

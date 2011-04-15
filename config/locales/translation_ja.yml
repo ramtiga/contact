@@ -1,0 +1,17 @@
+ja:
+  activerecord:
+    models:
+      contact: "お問い合わせ"  #g
+
+    attributes:
+      contact:
+        name: "お名前"  #g
+        email: "メールアドレス"  #g
+        subject: "題名"  #g
+        body: "お問い合わせ内容"  #g
+  submit: "送信"  #g
+  label:
+    name: "お名前"
+    email: "メールアドレス"  #g
+    subject: "題名"  #g
+    body: "お問い合わせ内容"  #g

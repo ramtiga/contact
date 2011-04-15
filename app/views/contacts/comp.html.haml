@@ -1,0 +1,10 @@
+%div#contents
+  %div#main
+    %h3 Contacts
+    %p
+    - if @contact.errors.any?
+      エラーが発生しました
+    - else
+      送信しました
+    %br
+    = link_to 'Top', '/contacts'
