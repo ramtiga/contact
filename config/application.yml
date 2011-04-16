@@ -1,0 +1,9 @@
+development:
+  google_api_key: "APIKEY_DEVELOPMENT"
+
+test:
+  google_api_key: "APIKEY_DEVELOPMENT"
+
+production:
+  google_api_key: "APIKEY_PRODUCTION"
+
